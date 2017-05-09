@@ -1,0 +1,6 @@
+---
+- name: Test playbook
+  hosts: all
+  tasks:
+    - name: Run the uptime command
+      command: "/usr/bin/uptime"
