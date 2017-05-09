@@ -6,6 +6,5 @@
       - name: install httpd
         yum: name=httpd state=latest
     - block:
-      - name: Start httpd service
-        service: httpd
-        status: started
+      - name: start httpd service
+        service: name=httpd state=started
